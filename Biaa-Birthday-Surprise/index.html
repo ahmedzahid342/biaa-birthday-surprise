@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10091f">
+  <title>Just for Biaa 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
+  <main class="app">
+    <section class="screen active" id="welcome">
+      <p class="eyebrow">✦ A LITTLE WORLD MADE FOR YOU ✦</p>
+      <div class="heart-orbit" aria-hidden="true"><span class="orbit"></span><span class="orbit orbit-two"></span><div class="heart">♥</div></div>
+      <p class="overline">SOMEONE SPECIAL IS WAITING</p>
+      <h1>Hey, <span class="gradient">Biaa</span>! <span class="pink">♡</span></h1>
+      <p class="intro">Someone made a little world just for you — filled with smiles, surprises, memories, and a little something from the heart.</p>
+      <button class="primary" id="start">Unlock your surprise <span>♡</span></button>
+      <p class="small">Made with love, just for you.</p>
+    </section>
+
+    <section class="screen" id="questions">
+      <div class="progress-row"><span id="counter">QUESTION 01 / 03</span><div class="track"><i id="progress"></i></div></div>
+      <p class="overline">A TINY GAME BEFORE THE MAGIC</p>
+      <h2 id="question-title">Ready for a little surprise?</h2>
+      <p class="intro" id="question-hint">Pick the answer that feels right.</p>
+      <div class="answers" id="answers"></div><p class="feedback" id="feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="overline">FIVE LITTLE MOMENTS, JUST FOR YOU</p>
+      <h2>My favourite kind of <span class="gradient">beautiful.</span></h2>
+      <p class="intro">Every picture has a little message for you, Biaa. Take your time. ♡</p>
+      <div class="photo-book">
+        <div class="photo-count" id="photo-count">MEMORY 01 / 05</div>
+        <div class="photo-frame" id="photo-frame">
+          <img id="memory-photo" src="photos/photo1.jpg" alt="Memory photo 1">
+          <div class="photo-placeholder" id="photo-placeholder">
+            <span class="placeholder-heart">♡</span>
+            <strong>Your photo goes here</strong>
+            <small>Add your picture as <b>photos/photo1.jpg</b></small>
+          </div>
+          <div class="photo-shine" aria-hidden="true"></div>
+        </div>
+        <div class="memory-caption">
+          <div class="caption-sparkle">✦</div>
+          <h3 id="memory-title">A little moment, a lot of meaning</h3>
+          <p id="memory-text">Some moments are beautiful on their own. Some become even more special because they remind me of you.</p>
+        </div>
+        <div class="photo-controls">
+          <button class="round-button" id="previous-photo" aria-label="Previous photo">←</button>
+          <div class="dots" id="photo-dots" aria-label="Choose a memory"></div>
+          <button class="round-button" id="next-photo" aria-label="Next photo">→</button>
+        </div>
+        <p class="small">One photo at a time · Five little birthday messages</p>
+      </div>
+      <button class="primary" id="celebrate">Continue to your birthday wish <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="birthday">
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <p class="overline">TODAY, THE SPOTLIGHT IS YOURS</p>
+      <div class="cake" aria-hidden="true"><div class="candle"><i></i></div><div class="icing"></div><div class="cake-layer middle"></div><div class="cake-layer bottom"></div></div>
+      <h1 class="birthday-title">Happy Birthday,<br><span class="gradient">Biaa!</span> 🎂</h1>
+      <p class="intro">May your days be full of laughter, your heart full of peace, and your year full of wonderful surprises.</p>
+      <div class="letter">
+        <div class="letter-icon">💌</div><p class="letter-label">A LITTLE WISH FOR YOU</p>
+        <p class="letter-copy">You deserve the kind of happiness that finds you in the smallest moments, the kind of love that feels gentle, and the kind of dreams that come true one by one. Keep shining in your own beautiful way.</p>
+        <p class="signature">With lots of love,<br><span>Ahmed ♡</span></p>
+      </div>
+      <div class="music-box">
+        <span class="music-icon">♫</span>
+        <div>
+          <strong>A song for you — Heeriye ♡</strong>
+          <small>Press play below to listen to the official music video by Jasleen Royal ft. Arijit Singh.</small>
+        </div>
+      </div>
+      <p class="small song-credit">Official video hosted on YouTube. Playback requires an internet connection.</p>
+      <button class="secondary replay" id="replay">Replay the surprise ↻</button>
+      <p class="small">October 29 · A day to celebrate you</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
